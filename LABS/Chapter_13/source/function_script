@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Declaring functions
+
+timestamp()                                     #create function to display current date and time
+{						#start function commands
+echo "Current time: $(date +%m/%d/%y" "%R)"	#display mm/dd/yyyy HH:MM
+sleep 2						#idle for 2 seconds
+clear						#clear scren	
+}
+
+#Start of script
+
+clear						#clear screen
+timestamp					#call timestamp function
+
+echo -n "Enter your first name: "; read         #input stored to read variable REPLY  
+echo -n "Enter your last  name: "; read lname   #input stored to variable lname
+
+
+echo -e  " \v Full Name: $REPLY $lname \v\v"	#Vertical line feed and print value of variables REPLY and lname
+
+timestamp					#call timestamp function
+
+
+

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+#Declare Variables
+
+passwd_file=/etc/passwd					#set the value of the variable passwd_file
+
+clear							#clear the screen
+read -p "Enter a username:" username			#Ask the user to enter a username and place it in the variable username
+grep ^$username $passwd_file > /dev/null		#Search /etc/passwd for the content of the variable username at the beginning of the line 
+status=$?						#Set the value of the variable status equal to the exit status of the previous command
+
+if [ $status -eq 0 ]; then				#Determine if the exit status of the previous command  is 0
+  echo "User $username found in $passwd_file"		#Display user found
+   else							#Execute the command below if the exit status code was > 0
+    echo "User $username is not found in $passwd_file"  #Display user not found
+fi							#End if statement

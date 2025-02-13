@@ -1,0 +1,31 @@
+\:\:\:
+
+This is the header section
+To define line numbering for this section use the -h option
+
+Line A
+
+Line B
+Line C
+
+
+\:\:
+
+This is the body  section
+To define line numbering for this section use the -b option
+
+Line A
+
+Line B
+Line C
+
+\:
+
+This is the footnote section
+To define line numbering for this section use the -f option
+
+Line A
+
+Line B
+Line C
+

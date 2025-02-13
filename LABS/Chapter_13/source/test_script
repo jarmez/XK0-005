@@ -1,0 +1,6 @@
+#!/bin/bash
+if test "$UID --eq 0"
+  then
+  echo "UID equals 0"
+
+fi

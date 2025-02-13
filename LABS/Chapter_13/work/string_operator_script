@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# declare variables
+
+a=abc
+b=def
+
+#Script start
+
+echo -e  "\v\vTesting a = b \v"
+if [ $a = $b ]; then
+ echo -e "true \v\v"
+  else
+   echo -e "not true \v"
+fi
+
+echo -e  "\v\vTesting a != b\v"
+if [ $a != $b ]; then
+ echo -e "true \v"
+  else
+   echo -e "not true \v"
+fi
+
+echo -e  "\v\vTesting a <  b\v"
+if [ $a  \<  $b ]; then
+ echo -e "true \v"
+  else
+   echo -e "not true \v"
+fi
+
+echo -e  "\v\vTesting a >  b\v"
+if [ $a  \>  $b ]; then
+ echo -e "true \v"
+  else
+   echo -e "not true \v"
+fi
+

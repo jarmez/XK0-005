@@ -1,0 +1,3 @@
+ if [ $EUID -ge 1000 ]; then
+   echo "Regular user"
+fi

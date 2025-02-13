@@ -1,0 +1,20 @@
+#!/bin/bash
+
+case $1 in			#use the first argument of the command line as the string to match
+
+  start)			#if the string is start execute this stanza
+   echo start
+  ;;				#end of stanza
+
+  stop)				#if the string is stop execute this stanza
+   echo stop
+  ;;				#end of stanza
+
+  *)				#if user has entered a string which does not match any of the strings in the case statement
+   echo "incorrect entry"
+  ;;
+
+esac				#end of case statement
+
+
+

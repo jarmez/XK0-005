@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#Declare variables
+
+declare -i x=0
+
+#Start Script
+
+while [ $x -lt 10 ]				#While the value of the variable x is less than 10
+  do						#Execute the commands between do and done for each iteration
+   x=$x+1					#Increment the value of x by 1
+   echo "the variable $x is less then 10"	#Display
+  done						# End of commands for this iteration
+
+
+

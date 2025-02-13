@@ -1,0 +1,33 @@
+#!/bin/bash
+
+
+#Script start
+
+echo -e  "\v\vTesting -f /root/.bashrc \v"
+if [ -f /root/.bashrc ]; then				#Test to see if the file /root/.bashrc is a text file
+ echo -e "true \v"
+  else
+   echo -e "not true \v"
+fi
+
+echo -e  "\v\vTesting -u /usr/bin/passwd \v"
+if [ -u /usr/bin/passwd ]; then				#Test to see if the file /usr/bin/passwd has suid applied
+ echo -e "true \v"
+  else
+   echo -e "not true \v"
+fi
+
+echo -e  "\v\vTesting -d /etc \v"			#Test to see if /etc is a directory
+if [ -d /etc ]; then
+ echo -e "true \v"
+  else
+   echo -e "not true \v"
+fi
+
+echo -e  "\v\vTesting -b /dev/sda \v"
+if [ -b /dev/sda ]; then				#Test to see if /dev/sda is a block device.
+ echo -e "true \v"
+  else
+   echo -e "not true \v"
+fi
+

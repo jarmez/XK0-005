@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#Start of script
+
+echo -n "Enter your first name: "; read         #input stored to read variable REPLY  
+echo -n "Enter your last  name: "; read lname   #input stored to variable lname
+
+echo "$REPLY $lname"

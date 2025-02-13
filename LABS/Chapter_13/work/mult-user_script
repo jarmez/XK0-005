@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#Start of Script
+
+if [ $EUID -ge 1000 ]; then			#Test to see if the users effective user id is greater than or equal to 1000
+  echo "Regular User"				#Display Regular Users
+   elif [ $EUID -gt 99 -a $EUID -lt 1000 ]	# If EUID was not 1000 but is greater than 99 and less than 1000
+    echo "System Account"			#Display System Account
+   else						#If none of the conditions are true
+    echo "System Admin Account"			#Display System Admin Account
+fi						# End of if statement
+

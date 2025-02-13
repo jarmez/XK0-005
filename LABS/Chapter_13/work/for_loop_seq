@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+#Start Script
+
+for x in `seq 0 1 10`				#Start sequence at 0 increment by 1 end at 10
+ do 
+ echo "The current number is $x"
+ done
+
