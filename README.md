@@ -7,5 +7,5 @@ For example, I was unable to run the VirtualBox built OVM (or the converted qcow
 Feel free to use these to construct your own lab to fit your own requirements. 
 
 ## License
-As far as I know these resources themselves are not subject to a copyright (like the book), but I am happy to be corrected on that.
+As far as I know these resources themselves are not subject to a copyright (unlike the book), but I am happy to be corrected on that.
 I have added the GPL 3.0 license because the binary for Bash is contained within these files.
